@@ -15,7 +15,7 @@ void main()                                                         //Declaracio
    printf("Ingrese grados en fahrenheit:");                     //Impresion en pantalla del mensaje
    scanf("%f",&fahrenheit);                                    //Ingresar el valor de la variable fahrenheit
    fahrenheit=(centigrados*9)/5+32;                           // Calculo matemático para convertir de centigrados a fahrenheit
-   centigrados=(5*fahrenheit)/9-32;                          //Calculo matemático para convertir de fahrenheit a centigrados
+   centigrados=(fahrenheit-32*5)/9;                          //Calculo matemático para convertir de fahrenheit a centigrados
    printf("Grados en fahrenheit:%.2f",fahrenheit);          // Impresion del valor con dos decimales de fahrenheit
    printf("\t\tGrados en centigrados:%.2f",centigrados);   // Impresion del valor con dos decimales de centigrados
    }
